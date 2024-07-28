@@ -113,3 +113,7 @@ http://localhost:8080/signup
 
 次は、DIでValidateion機能を追加する
 
+```sh
+go build -tags netgo -ldflags '-s -w' -o app
+    && go run migrate/migrate.go
+```
